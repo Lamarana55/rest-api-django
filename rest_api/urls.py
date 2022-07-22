@@ -22,5 +22,5 @@ schema_view = get_swagger_view(title='Rest Api CRUD django')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('api-docs/', schema_view),
+    path('doc', schema_view),
 ]
