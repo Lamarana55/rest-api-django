@@ -1,3 +1,9 @@
 
+from django.urls import path
 
-u
+from api_site_app import views
+
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
